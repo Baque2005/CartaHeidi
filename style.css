@@ -1551,3 +1551,23 @@ envelope-back .letter {
 .imagen-carta:hover {
   transform: scale(1.05);
 }
+.cerrar-carta-contenedor {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cerrar-carta-boton {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-carta-boton:hover {
+  background-color: #ff1493;
+}

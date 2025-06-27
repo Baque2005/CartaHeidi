@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const tituloCarta = localStorage.getItem("tituloCarta") || "Para tí mi chiquito 🌌";
   const mensajeCarta = localStorage.getItem("mensajeCarta") || "Chiquito sé que desde pequeños hemos tenido grandes aventuras crecimos físicamente<br> pero aún desde el fondo de mi corazón seguimos siendo los niños chiquitos esos niños <br>que por cualquier cosa reíamos llorábamos pero nos amábamos.<br><br>Solo quiero que sepas que te quiero un montón y espero te recuperes pronto tal vez lo tomes como humor<br> pero es para animarte y decirte lo valioso que eres te quiero mucho";
   const firmaCarta = localStorage.getItem("firmaCarta") || "Con amor eterno,<br><strong>Tu tía Heidy </strong>";
-
+const cerrarCartaBtn = document.getElementById('cerrarCartaBtn');
+cerrarCartaBtn.addEventListener('click', () => {
+  cerrarSobre();
+});
   document.getElementById("tituloCarta").innerHTML = tituloCarta;
   document.getElementById("mensajeCarta").innerHTML = mensajeCarta;
   document.getElementById("firmaCarta").innerHTML = firmaCarta;
